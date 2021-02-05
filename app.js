@@ -138,3 +138,26 @@
 // let greetings = (name) => 'Hello ' + name
 // let message = greetings('Jacob')
 // console.log(message)
+
+
+
+// function sum(num1, num2){
+//     return num1 + num2
+// }
+
+// let output = sum(10, 5)
+// console.log(output) // 15
+
+// let sum = (num1, num2) => {
+//     return num1 + num2
+// }
+// console.log(sum(5, 20))
+
+// let sum = (num1, num2) => num1 + num2
+// console.log(sum(10, 7))
+
+// let sum = (num1, num2) => {
+//     return num1 + num2
+// }
+// let output = sum(3, 7)
+// console.log(output)
