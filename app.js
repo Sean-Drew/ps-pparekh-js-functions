@@ -99,3 +99,42 @@
 // console.log(counter2()) // 12
 // console.log(counter2()) // 13
 
+
+// Base function
+// let greetings = function () {
+//     return 'Hello World'
+// }
+// let message = greetings()
+// console.log(message) // Hello World
+
+// Now as arrow function. Hello World is explicitly returned.
+// let greetings = () => {
+//     return 'Hello World'
+// }
+// let message = greetings()
+// console.log(message)
+
+// Arrow function further reduced. Hello World is implicitly returned.
+// let greetings = () => 'Hello World'
+// let message = greetings()
+// console.log(message)
+
+
+// Base function
+// let greet = function greetings(name) {
+//     return 'Hello ' + name
+// }
+// let message = greet('John')
+// console.log(message) // Hello John
+
+// Now as arrow function.
+// let greetings = (name) => {
+//     return 'Hello ' + name
+// }
+// let message = greetings('John')
+// console.log(message)
+
+// Further reduced / implicit return
+// let greetings = (name) => 'Hello ' + name
+// let message = greetings('Jacob')
+// console.log(message)
