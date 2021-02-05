@@ -161,3 +161,17 @@
 // }
 // let output = sum(3, 7)
 // console.log(output)
+
+
+// this keyword refers to the owner of the function being executed. arrow functions don't have their own this value, it's inherited from closing scope.
+
+
+// let message = {
+//     name: 'John',
+//     regularFunction: function() {
+//         console.log('Hello ' + this.name)
+//     },
+//     arrowFunction: () => console.log('Hi ' + this.name)
+// }
+// message.regularFunction()
+// message.arrowFunction()
