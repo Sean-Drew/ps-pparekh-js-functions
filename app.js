@@ -175,3 +175,91 @@
 // }
 // message.regularFunction()
 // message.arrowFunction()
+
+
+// function sayHi() {
+//     console.log('Hi')
+//     console.log(this)
+// }
+// sayHi()
+
+// let greeting = {}
+// greeting.sayHi = function() {
+//     console.log('Hi')
+//     console.log(this)
+// }
+// greeting.sayHi()
+
+// let person1 = {
+//     name: 'John',
+//     age: 22
+// }
+// let person2 = {
+//     name: 'Mary',
+//     age: 26
+// }
+// let sayHi = function() {
+//     console.log('Hi, ' + this.name)
+// }
+// sayHi.call(person1)
+// sayHi.call(person2)
+
+
+
+// let person1 = {
+//     name: 'John',
+//     age: 22
+// }
+// let person2 = {
+//     name: 'Mary',
+//     age: 26
+// }
+
+// let sayHi = function() {
+//     if (this.name) {
+//         console.log('Hi, ' + this.name)  
+//     } else {
+//         console.log('Harlan')
+//     }
+    
+// }
+
+// sayHi.call(person1)
+// sayHi.call(person2)
+// sayHi()
+
+
+// function introduction(name, profession) {
+//     console.log('My name is ' + name + ' and I am a ' + profession + '.')
+//     console.log(this)
+// }
+// introduction('John', 'student')
+// introduction.apply(undefined, ['Mary', 'Lawyer'])
+// introduction.call(undefined, 'James', 'artist')
+
+
+// let person1 = {
+//     name: 'Mary',
+//     getName: function() {
+//         return this.name
+//     }
+// }
+// let person2 = {
+//     name: 'John'
+// }
+// let getNameCopy = person1.getName.bind(person2)
+// console.log(getNameCopy())
+
+
+// let x = 1
+// let y = 2
+// console.log(eval('x + y + 1'))
+
+// let x = 1
+// let y = 2
+// let s = 'abc'
+// console.log(eval('x + y + s')) // 3abc
+// console.log(eval('s + y + x')) // abc21
+// console.log(eval('s + x + y')) // abc12
+// console.log(eval('x + s + y')) // 1abc2
+// console.log(eval('y + s + x')) // 2abc1
