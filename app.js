@@ -263,3 +263,35 @@
 // console.log(eval('s + x + y')) // abc12
 // console.log(eval('x + s + y')) // 1abc2
 // console.log(eval('y + s + x')) // 2abc1
+
+
+// // example of default parameters. default params should come after other params.
+// function sayHi(name = 'World') {
+//     console.log('Hello ' + name)
+// }
+// // calling w/ no arg uses default
+// sayHi()
+// // calling w/ arg uses the specified arg
+// sayHi('John')
+// sayHi('Gilligan')
+
+
+// rest param, accept multiple args. should appear after regular params.
+// let sayHi = function greet(...names) {
+//     names.forEach(name => console.log('Hi ' + name))
+// }
+// sayHi('Mary', 'John', 'James')
+
+
+
+// // spread operator, opposite of rest, take array as argand spread elements
+// function greet(person1, person2) {
+//     console.log('Hello ' + person1 + ' and ' + person2)
+// }
+// let names = ['John', 'Mary']
+// greet(names) // Hello John,Mary and undefined (the values for names array doesn't get spread, so person2 is undefined and person1 is all values)
+// greet(...names) // Hello John and Mary
+// let names2 = ['John', 'Mary', 'Alex', 'Billy', 'Katie']
+// greet(names2) // Hello John,Mary,Alex,Billy,Katie and undefined
+// greet(...names2) // Hello John and Mary (still only john & mary because they are put in as person1 and person2)
+
